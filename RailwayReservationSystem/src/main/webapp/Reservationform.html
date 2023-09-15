@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Railways Reservation System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Railways Reservation System</h2>
+        <form action="ReservationServlet" method="post">
+            <label for="source">Source:</label>
+            <select id="source" name="source" required>
+                <option value="">Select Source</option>
+                <option value="parlakhemundi">parlakehmundi</option>
+                <option value="Gunpur">Gunpur</option>
+                <option value="Kasinagar">Kasinagar</option>
+                <option value="Berhampur">Berhampur</option>
+                <option value="Bhubaneswar">Bhubaneswar</option>
+                <option value="Puri">Puri</option>
+                <option value="cuttack">cuttack</option>
+                <!-- Add more cities as needed -->
+            </select>
+
+            <label for="destination">Destination:</label>
+            <select id="destination" name="destination" required>
+                <option value="">Select Destination</option>
+                
+                <option value="Berhampur">Berhampur</option>
+                <option value="Bhubaneswar">Bhubaneswar</option>
+                <option value="Puri">Puri</option>
+                <option value="parlakhemundi">parlakhemundi</option>
+                <option value="Gunpur">Gunpur</option>
+                <option value="Kasinagar">Kasinagar</option>
+                <option value="cuttack">cuttack</option>
+                <!-- Add more cities as needed -->
+            </select>
+
+            <label for="date">Date of Travel:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="class">Class:</label>
+            <select id="class" name="class" required>
+                <option value="">Select Class</option>
+                <option value="first">First Class</option>
+                <option value="second">Second Class</option>
+                <option value="Ac">Ac</option>
+                <option value="Sleeper">Sleeper</option>
+                <option value="Deluxe">Deluxe</option>
+                <!-- Add more classes as needed -->
+            </select>
+
+            <button type="submit">Book Ticket</button>
+        </form>
+    </div>
+</body>
+</html>
